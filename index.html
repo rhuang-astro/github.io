@@ -340,28 +340,28 @@
       
         
           
-            <h1 id="Jupyter-notebook"><a href="#Jupyter-notebook" class="headerlink" title="Jupyter notebook"></a>Jupyter notebook</h1><p><img src="/images/jupyternotebook_logo.png" alt="jupyternotebook_logo"></p>
-<h2 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h2><blockquote>
+            <p><img src="/images/jupyternotebook_logo.png" alt="jupyternotebook_logo"></p>
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><blockquote>
 <p>The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more.</p>
 </blockquote>
 <p>jupyter notebook同时显示笔记，代码和输出。 写试验性质代码时可以随时写下自己的想法，自己的测试结果也可以保存。 可以极大提高编程效率。</p>
-<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p><a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda</a>默认集成jupyter notebook以及jupyter lab。<br>安装过程：</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p><a href="https://www.anaconda.com/" target="_blank" rel="noopener">Anaconda</a>默认集成jupyter notebook以及jupyter lab。<br>安装过程：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ wget https://repo.continuum.io/archive/Anaconda3-2018.12-MacOSX-x86_64.pkg   # 请选择下载需要的版本</span><br><span class="line">$ chmod +x Anaconda3-2018.12-MacOSX-x86_64.pkg</span><br><span class="line">$ ./Anaconda3-2018.12-MacOSX-x86_64.pkg</span><br></pre></td></tr></table></figure>
 <p>之后按照提示安装Anaconda</p>
 <p>安装完成后<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ jupyter notebook</span><br></pre></td></tr></table></figure></p>
 <p>即可使用。</p>
-<h2 id="远程使用"><a href="#远程使用" class="headerlink" title="远程使用"></a>远程使用</h2><p>jupyter notebook实际上是由底层的core提供。然后在本机的浏览器中打开。这种设计带来了一些有趣的特性。<br>比如可以自行修改界面。可以换不同的浏览器打开。<br>甚至是在远程服务器打开jupyter，在本地浏览器使用。（需要网络稳定）</p>
+<h1 id="远程使用"><a href="#远程使用" class="headerlink" title="远程使用"></a>远程使用</h1><p>jupyter notebook实际上是由底层的core提供。然后在本机的浏览器中打开。这种设计带来了一些有趣的特性。<br>比如可以自行修改界面。可以换不同的浏览器打开。<br>甚至是在远程服务器打开jupyter，在本地浏览器使用。（需要网络稳定）</p>
 <p>我们当然可以使用远程服务器的xserver运行jupyter notebook的同时使用服务器的浏览器来使用。但是更好的方式，是将jupyter数据直接发到本机，而不是通过gui界面。这样的方式更加稳定。</p>
 <p>你可以通过搭建网络服务器实现。但是这样的方式需要会搭建网络服务器，还要解决网络安全问题。<br>最简单的方式是直接使用ssh来传输数据。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">local$ ssh name@server -L127.0.0.1:8888:127.0.0.1:8888</span><br><span class="line"></span><br><span class="line">server$ jupyter notebook --no-browser --port=8888</span><br></pre></td></tr></table></figure></p>
 <p>通过ssh 将本地8888端口与远程服务器的8888端口串街。注意要选用闲置的端口。</p>
 <p>在远程打开jupyter notebook，指定8888端口，同时要求不启动服务器的浏览器。 复制了返回的jupyter地址，如 <a href="http://localhost:8888" target="_blank" rel="noopener">http://localhost:8888</a><br>在本地任意浏览器上打开该地址。</p>
 <p>是不是打开了jupyter notebook，目录是远程服务器的目录？ 惊不惊喜？</p>
 <p>于是你可以在本地的浏览器编程，但是执行却是在远程服务器上。 你的小笔记本可以喘口气了。</p>
-<h2 id="extension"><a href="#extension" class="headerlink" title="extension"></a>extension</h2><p>在github上由基于jupyter的开源<a href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions" target="_blank" rel="noopener">插件</a>，使得jupyter notebook更易使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda install -c conda-forge jupyter_contrib_nbextensions</span><br></pre></td></tr></table></figure></p>
+<h1 id="extension"><a href="#extension" class="headerlink" title="extension"></a>extension</h1><p>在github上由基于jupyter的开源<a href="https://github.com/ipython-contrib/jupyter_contrib_nbextensions" target="_blank" rel="noopener">插件</a>，使得jupyter notebook更易使用。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ conda install -c conda-forge jupyter_contrib_nbextensions</span><br></pre></td></tr></table></figure></p>
 <p>下图是我平时选择的插件：<br><img src="/images/jupyter_extension.png" alt="jupyter_extension"></p>
-<h3 id="table-of-contents"><a href="#table-of-contents" class="headerlink" title="table of contents"></a>table of contents</h3><p>强烈推荐目录插件。在使用notebook的过程中，可以由markdown的标题自行生成目录。 程序的结构将会更加清楚。</p>
+<h2 id="table-of-contents"><a href="#table-of-contents" class="headerlink" title="table of contents"></a>table of contents</h2><p>强烈推荐目录插件。在使用notebook的过程中，可以由markdown的标题自行生成目录。 程序的结构将会更加清楚。</p>
 <p><img src="/images/table_of _contents.png" alt="table_of _contents"></p>
-<h3 id="gist-it"><a href="#gist-it" class="headerlink" title="gist-it"></a>gist-it</h3><blockquote>
+<h2 id="gist-it"><a href="#gist-it" class="headerlink" title="gist-it"></a>gist-it</h2><blockquote>
 <p>Gist 是Github 推出的基于Git 的代码片段管理服务。 用户可以提交自己的代码片段或任意的文本，可以作为个人的代码管理库、文档管理库等</p>
 </blockquote>
 <p>如我的gist:<br><a href="https://gist.github.com/rhuang-astro" target="_blank" rel="noopener">https://gist.github.com/rhuang-astro</a></p>
@@ -369,7 +369,7 @@
 <p>使用gist-it插件可以一键上传自己的notebook到gist上，而且在网页上还保持了jupyter notebook的显示格式。 Perfect！</p>
 <p>如：<br><img src="/images/gist_short_cut.png" alt="gist_short_cut"></p>
 <p>在nbextension中的gist-it中数据自己的token。<br>token在github的<a href="https://github.com/settings/tokens" target="_blank" rel="noopener">github.com/settings/tokens</a>中设置。<br><img src="/images/gist-it-configuration.png" alt="gist-it-configuration"></p>
-<h2 id="Jupyter-themes"><a href="#Jupyter-themes" class="headerlink" title="Jupyter themes"></a>Jupyter themes</h2><p>可以自己定制jupyter notebook的外观。<br>比如页面宽度，比如黑色主题。</p>
+<h1 id="Jupyter-themes"><a href="#Jupyter-themes" class="headerlink" title="Jupyter themes"></a>Jupyter themes</h1><p>可以自己定制jupyter notebook的外观。<br>比如页面宽度，比如黑色主题。</p>
 <p><a href="https://github.com/dunovank/jupyter-themes" target="_blank" rel="noopener">jupyter-themes</a></p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"># install</span><br><span class="line">$ pip install jupyterthemes</span><br></pre></td></tr></table></figure>
 <p>我最喜欢的模式是：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ jt -t grade3 -fs 9  -altp -tfs 11 -nfs 10 -cellw 90% -T -N -kl</span><br></pre></td></tr></table></figure></p>
