@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="rhuang&#39;s Blog">
 <meta property="og:description" content=".gist {width:600px !important;}   .gist-file   .gist-data {max-height: 3000px;max-width: 1000px;}">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-01-07T12:51:42.185Z">
+<meta property="og:updated_time" content="2019-01-13T02:00:41.677Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="test2">
 <meta name="twitter:description" content=".gist {width:600px !important;}   .gist-file   .gist-data {max-height: 3000px;max-width: 1000px;}">
@@ -346,6 +346,9 @@
 </style>
 
 <script src="https://gist.github.com/rhuang-astro/8b01b858d9dcc7b1cb5345738de891ec.js"></script>
+
+
+
       
     </div>
     
@@ -411,7 +414,9 @@
           
 
   
+    <div id="gitalk-container"></div>
 
+  
 
 
         </div>
@@ -683,6 +688,31 @@
 
 
 
+
+
+
+
+  <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+
+  <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+   <script type="text/javascript">
+        var gitalk = new Gitalk({
+          clientID: 'fb39bc2671b5e36fa54a',
+          clientSecret: '01caf248f9d186381592d47949424e0eda5caec6',
+          repo: 'rhuang-astro.github.io',
+          owner: 'rhuang-astro',
+          admin: ['rhuang-astro'],
+          id: location.pathname,
+          labels: 'gitalk',
+          perPage: 10,
+          pagerDirection: 'last',
+          createIssueManually: true,
+          distractionFreeMode: false
+        })
+
+        gitalk.render('gitalk-container')           
+       </script>
 
 
 
