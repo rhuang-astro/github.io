@@ -228,7 +228,7 @@
       
         
         <li class="menu-item menu-item-goal">
-          <a href="/买相机！/" rel="section">
+          <a href="/Goal/" rel="section">
             
               <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
             
@@ -762,7 +762,22 @@
           
             <script src="https://gist.github.com/rhuang-astro/8b01b858d9dcc7b1cb5345738de891ec.js">test</script>
 
+<p><link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css"></p>
+<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
 
+<p><div id="gitment-container"></div></p>
+<script>
+    const gitment = new Gitment({
+      id: 'id', // 可不填写，默认取评论页地址
+      owner: 'rhuang-astro',
+      repo: 'rhuang-astro.github.io',
+      oauth: {
+        client_id: 'fb39bc2671b5e36fa54a',
+        client_secret: '01caf248f9d186381592d47949424e0eda5caec6',
+              },
+    });
+    gitment.render('gitment-container');
+</script>
           
         
       
