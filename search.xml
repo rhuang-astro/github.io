@@ -12,13 +12,8 @@
       </tags>
   </entry>
   <entry>
-    <title><![CDATA[test2]]></title>
-    <url>%2F2019%2F01%2F07%2Ftest2%2F</url>
-    <content type="text"><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title><![CDATA[plot M31 image optical and XMM FOV]]></title>
-    <url>%2F2019%2F01%2F07%2Fplot-M31-image-optical-and-XMM-FOV%2F</url>
+    <url>%2F2019%2F01%2F08%2Fplot-M31-image-optical-and-XMM-FOV%2F</url>
     <content type="text"><![CDATA[]]></content>
       <categories>
         <category>code</category>
@@ -27,6 +22,11 @@
         <tag>gist</tag>
         <tag>code</tag>
       </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[test2]]></title>
+    <url>%2F2019%2F01%2F07%2Ftest2%2F</url>
+    <content type="text"><![CDATA[]]></content>
   </entry>
   <entry>
     <title><![CDATA[gist_test]]></title>
