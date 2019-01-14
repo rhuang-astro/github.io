@@ -39,7 +39,7 @@
   <entry>
     <title><![CDATA[hexo 学习]]></title>
     <url>%2F2019%2F01%2F06%2Ftest%2F</url>
-    <content type="text"><![CDATA[语法斜体， 粗体 分割线 Hexo admin is really useful! hexo admin You don’t need to write your blog with vim or other Markdown app any more. It provides a admin page to write post/pages, you can deploy your site automatically. The most amazing thing is the function of pasting picture! But I may still need to learn more about Markdown. 竟然让我一开始就丢了文章， 实在是有点夸张了吧。 测试 怎样的配置是可以 注意posts里面的编辑器右上角 显示 unpublish ，实际是这个页面publish。 点了后会变成 unpulish，也就是draft。 当你第一次点击 Deploy 按钮时，可能会遇到上述的错误，因为缺少了执行 deploy 的命令，这个问题已经有人提了issue 并且解决了还需要注意的是，issue 中的脚本只是 hexo deploy，只是做 deploy 操作，但是一般我们的使用习惯是编辑完之后 deploy，所以是要 deploy 最新的，需要把脚本改为即可 123#!/usr/bin/env shhexo ghexo d]]></content>
+    <content type="text"><![CDATA[语法https://guides.github.com/features/mastering-markdown/ https://hexo.io/zh-cn/docs/writing 123456分割线：*** --- *斜体***粗体** 斜体粗体 瞎折腾http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html hexo adminposts里面的编辑器右上角 显示 unpublish ，实际是这个页面publish。 点了后会变成 unpulish，也就是draft。 当你第一次点击 Deploy 按钮时，可能会遇到上述的错误，因为缺少了执行 deploy 的命令，这个问题已经有人提了issue 并且解决了还需要注意的是，issue 中的脚本只是 hexo deploy，只是做 deploy 操作，但是一般我们的使用习惯是编辑完之后 deploy，所以是要 deploy 最新的，需要把脚本改为即可 123#!/usr/bin/env shhexo ghexo d gitalk]]></content>
   </entry>
   <entry>
     <title><![CDATA[Hello World]]></title>
