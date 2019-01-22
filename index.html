@@ -741,6 +741,18 @@
         
           
             <script src="https://gist.github.com/rhuang-astro/e2fd846fc0484f1af006e12fa8f5de15.js"></script>
+
+
+
+<ul>
+<li style="list-style: none"><input type="checkbox"> test<ul>
+<li style="list-style: none"><input type="checkbox"> test2</li>
+<li style="list-style: none"><input type="checkbox"> test</li>
+</ul>
+</li>
+<li style="list-style: none"><input type="checkbox"> test</li>
+</ul>
+
           
         
       
@@ -865,6 +877,7 @@
 <p><em>斜体</em><br><strong>粗体</strong></p>
 <hr>
 <h1 id="瞎折腾"><a href="#瞎折腾" class="headerlink" title="瞎折腾"></a>瞎折腾</h1><p><a href="http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html" target="_blank" rel="noopener">http://shenzekun.cn/hexo%E7%9A%84next%E4%B8%BB%E9%A2%98%E4%B8%AA%E6%80%A7%E5%8C%96%E9%85%8D%E7%BD%AE%E6%95%99%E7%A8%8B.html</a></p>
+<p><a href="http://www.cduyzh.com/" target="_blank" rel="noopener">http://www.cduyzh.com/</a></p>
 <h2 id="hexo-admin"><a href="#hexo-admin" class="headerlink" title="hexo admin"></a>hexo admin</h2><p>posts里面的编辑器右上角 显示 unpublish ，实际是这个页面publish。 点了后会变成 unpulish，也就是draft。</p>
 <p>当你第一次点击 Deploy 按钮时，可能会遇到上述的错误，因为缺少了执行 deploy 的命令，这个问题已经有人提了<br><a href="https://github.com/jaredly/hexo-admin/issues/70" target="_blank" rel="noopener">issue</a> 并且解决了<br>还需要注意的是，issue 中的脚本只是 hexo deploy，只是做 deploy 操作，但是一般我们的使用习惯是编辑完之后 deploy，所以是要 deploy 最新的，需要把脚本改为即可</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#!/usr/bin/env sh</span></span><br><span class="line">hexo g</span><br><span class="line">hexo d</span><br></pre></td></tr></table></figure>
