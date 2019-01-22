@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[M31: Andromeda]]></title>
+    <url>%2F2019%2F01%2F23%2FM31-Andromeda%2F</url>
+    <content type="text"><![CDATA[]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[Jupyter notebook 介绍]]></title>
     <url>%2F2019%2F01%2F10%2Fjupyter-notebook%2F</url>
     <content type="text"><![CDATA[简介 The Jupyter Notebook is an open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text. Uses include: data cleaning and transformation, numerical simulation, statistical modeling, data visualization, machine learning, and much more. jupyter notebook同时显示笔记，代码和输出。 写试验性质代码时可以随时写下自己的想法，自己的测试结果也可以保存。 可以极大提高编程效率。 安装Anaconda默认集成jupyter notebook以及jupyter lab。安装过程： 123$ wget https://repo.continuum.io/archive/Anaconda3-2018.12-MacOSX-x86_64.pkg # 请选择下载需要的版本$ chmod +x Anaconda3-2018.12-MacOSX-x86_64.pkg$ ./Anaconda3-2018.12-MacOSX-x86_64.pkg 之后按照提示安装Anaconda 安装完成后1$ jupyter notebook 即可使用。 远程使用jupyter notebook实际上是由底层的core提供。然后在本机的浏览器中打开。这种设计带来了一些有趣的特性。比如可以自行修改界面。可以换不同的浏览器打开。甚至是在远程服务器打开jupyter，在本地浏览器使用。（需要网络稳定） 我们当然可以使用远程服务器的xserver运行jupyter notebook的同时使用服务器的浏览器来使用。但是更好的方式，是将jupyter数据直接发到本机，而不是通过gui界面。这样的方式更加稳定。 你可以通过搭建网络服务器实现。但是这样的方式需要会搭建网络服务器，还要解决网络安全问题。最简单的方式是直接使用ssh来传输数据。123local$ ssh name@server -L127.0.0.1:8888:127.0.0.1:8888server$ jupyter notebook --no-browser --port=8888 通过ssh 将本地8888端口与远程服务器的8888端口串街。注意要选用闲置的端口。 在远程打开jupyter notebook，指定8888端口，同时要求不启动服务器的浏览器。 复制了返回的jupyter地址，如 http://localhost:8888在本地任意浏览器上打开该地址。 是不是打开了jupyter notebook，目录是远程服务器的目录？ 惊不惊喜？ 于是你可以在本地的浏览器编程，但是执行却是在远程服务器上。 你的小笔记本可以喘口气了。 extension在github上由基于jupyter的开源插件，使得jupyter notebook更易使用。1$ conda install -c conda-forge jupyter_contrib_nbextensions 下图是我平时选择的插件： table of contents强烈推荐目录插件。在使用notebook的过程中，可以由markdown的标题自行生成目录。 程序的结构将会更加清楚。 gist-it Gist 是Github 推出的基于Git 的代码片段管理服务。 用户可以提交自己的代码片段或任意的文本，可以作为个人的代码管理库、文档管理库等 如我的gist:https://gist.github.com/rhuang-astro 而我将gist作为的我的代码笔记。 使用gist-it插件可以一键上传自己的notebook到gist上，而且在网页上还保持了jupyter notebook的显示格式。 而gist是可以在Hexo中一句代码展示出来！Perfect！ 如： 在nbextension中的gist-it中数据自己的token。token在github的github.com/settings/tokens中设置。 Jupyter themes可以自己定制jupyter notebook的外观。比如页面宽度，比如黑色主题。 jupyter-themes 12# install$ pip install jupyterthemes 我最喜欢的模式是：1$ jt -t grade3 -fs 9 -altp -tfs 11 -nfs 10 -cellw 90% -T -N -kl 多看官网是个好习惯]]></content>
@@ -19,8 +24,8 @@
         <category>code</category>
       </categories>
       <tags>
-        <tag>code</tag>
         <tag>gist</tag>
+        <tag>code</tag>
       </tags>
   </entry>
   <entry>
